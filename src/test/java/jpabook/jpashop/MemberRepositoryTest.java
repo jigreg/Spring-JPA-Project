@@ -16,7 +16,7 @@ public class MemberRepositoryTest {
     @Autowired MemberRepository memberRepository;
 
     @Test
-    @Transactional
+    @Transactional // 트랜젝션
     @Rollback(false)
     public void testMember() throws Exception {
         //given
