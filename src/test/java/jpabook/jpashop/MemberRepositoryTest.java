@@ -15,7 +15,7 @@ import org.springframework.transaction.annotation.Transactional;
 public class MemberRepositoryTest {
     @Autowired MemberRepository memberRepository;
 
-    @Test
+    @Test // Test
     @Transactional // 트랜젝션
     @Rollback(false)
     public void testMember() throws Exception {
