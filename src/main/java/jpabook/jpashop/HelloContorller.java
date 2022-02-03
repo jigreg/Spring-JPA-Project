@@ -14,3 +14,10 @@ public class HelloContorller {
 
     }
 }
+@Controller
+public class IndexController{
+    @GetMapping("jpashop")
+    public String {
+
+    }
+}
