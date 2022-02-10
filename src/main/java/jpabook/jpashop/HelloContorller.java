@@ -18,6 +18,7 @@ public class HelloContorller {
 public class IndexController{
     @GetMapping("jpashop")
     public String {
-
+            model.addAttribute();
+            return ;
     }
 }
