@@ -17,8 +17,8 @@ public class HelloContorller {
 @Controller
 public class IndexController{
     @GetMapping("jpashop")
-    public String {
-            model.addAttribute();
-            return ;
+    public String index(Model model) {
+            model.addAttribute("data1","jpashop");
+            return "jpashop";
     }
 }
