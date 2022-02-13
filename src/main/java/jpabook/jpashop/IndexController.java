@@ -5,12 +5,11 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-public class HelloContorller {
+public class IndexController {
 
-    @GetMapping("hello")
-    public String hello(Model model) {
-        model.addAttribute("data","hello!!");
-        return "hello";
-
+    @GetMapping("jpashop")
+    public String index(Model model) {
+        model.addAttribute("data1", "jpashop");
+        return "jpashop";
     }
 }
