@@ -11,5 +11,7 @@ public class IndexController {
     public String index(Model model) {
         model.addAttribute("data1", "jpashop");
         return "jpashop";
+
+
     }
 }
