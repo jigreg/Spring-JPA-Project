@@ -18,6 +18,6 @@ public class Delivery {
     @Embedded
     private Address address;
 
-    @Enumerated(EnumType.STRING)
-    private DeliveryStatus status;
+   // @Enumerated(EnumType.STRING)
+   // private DeliveryStatus status;
 }
