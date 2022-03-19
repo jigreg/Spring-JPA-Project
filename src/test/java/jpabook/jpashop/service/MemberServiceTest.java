@@ -10,6 +10,8 @@ import org.springframework.test.annotation.Rollback;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.transaction.annotation.Transactional;
 
+import javax.persistence.EntityManager;
+
 import static org.junit.Assert.*;
 
 @RunWith(SpringRunner.class)
@@ -19,6 +21,7 @@ public class MemberServiceTest {
 
     @Autowired MemberService memberService;
     @Autowired MemberRepository memberRepository;
+    @Autowired EntityManager em;
     @Test
     @Rollback(value = false)
     public void 회원가입() throws Exception {
