@@ -24,4 +24,12 @@ public class OrderItem {
 
     private int orderPrices; //주문가격
     private int count; // 주문수량
+
+    public void cancel(){
+        getItem().addStock(count);
+    }
+
+    public int getTotalPrice() {
+        return getOrderPrices() * getCount();
+    }
 }
