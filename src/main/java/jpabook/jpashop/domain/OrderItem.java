@@ -41,8 +41,10 @@ public class OrderItem {
         getItem().addStock(count);
     }
 
+
     // 조회 로직
     public int getTotalPrice() {
         return getOrderPrices() * getCount();
     }
+
 }
