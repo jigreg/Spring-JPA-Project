@@ -19,8 +19,9 @@ public class Delivery {
     private Address address;
 
     public boolean getStatus() {
+        return false;
     }
 
-    @Enumerated(EnumType.STRING)
-    private DeliveryStatus status;
+    //@Enumerated(EnumType.STRING)
+    //private DeliveryStatus status;
 }
